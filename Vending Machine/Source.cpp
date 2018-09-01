@@ -48,5 +48,6 @@ int main()
 
 	OUT:cout << "Thank you! " << gold << " gold will be returned." << endl;
 
+	//Test
 	return 0;
 }
