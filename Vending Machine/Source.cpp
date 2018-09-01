@@ -47,6 +47,8 @@ int main()
 	} while (again == 'Y' || again == 'y');
 
 	OUT:cout << "Thank you! " << gold << " gold will be returned." << endl;
-
+	
+	cin.ignore();
+	cin.get();
 	return 0;
 }
