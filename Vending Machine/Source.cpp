@@ -39,7 +39,7 @@ int main()
 			cout << "You have " << gold - cost[choice] << " gold remaining." << endl;
 			gold = gold - cost[choice];
 		}
-		else { cout << "\ninsufficient gold." << endl; } //Not enough gold
+		else { cout << "\nInsufficient gold." << endl; } //Not enough gold
 
 		
 		cout << "Choose another item? (Y/N)" << endl; //User selects to continue
