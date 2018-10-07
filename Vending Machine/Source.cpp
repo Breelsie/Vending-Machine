@@ -1,5 +1,6 @@
 /*This is a test program for a vending machine*/
 //Test
+//test 2
 #include <iostream>
 #include <iomanip>
 #include <string>
