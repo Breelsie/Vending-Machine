@@ -10,8 +10,8 @@ int main()
 {
 	//User inserts gold
 	int gold, choice;
-	int cost[6] = { 0, 300, 500, 200, 150, 250 };
-	string item[6] = { "blank", "Potion", "Ether", "Antidote", "Eye Drops", "Echo Drops" };
+	int cost[6] = { 300, 500, 200, 150, 250 };
+	string item[6] = { "Potion", "Ether", "Antidote", "Eye Drops", "Echo Drops" };
 	char again = 'y';
 	cout << "Please insert gold." << endl;
 	cin >> gold;
@@ -30,9 +30,10 @@ int main()
 		cout << "5. Echo Drops" << setw(20) << "250 gold" << endl;
 		cout << "6. Cancel" << endl;
 		cin >> choice; //User's choice
+		choice--;
 
 		if (choice == 6) { //User selects cancel
-			goto OUT;
+			break;
 		}
 		else if (gold >= cost[choice]) //User chooses item
 		{
@@ -47,7 +48,7 @@ int main()
 		cin >> again;
 	} while (again == 'Y' || again == 'y');
 
-	OUT:cout << "Thank you! " << gold << " gold will be returned." << endl;
+	cout << "Thank you! " << gold << " gold will be returned." << endl;
 	
 	cin.ignore();
 	cin.get();
