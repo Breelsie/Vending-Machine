@@ -1,3 +1,3 @@
 # Vending-Machine
 
-I'm learning!
+First program.
